@@ -1,0 +1,133 @@
+.navbar_container {
+  // Sizin diğer stil ayarlarınız burada kalabilir
+}
+
+.up_side_navbar {
+  max-width: 1400px;
+  width: 100%;
+  min-height: 52px;
+  font-weight: 600;
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 18px;
+  background-color: rgb(255, 255, 255);
+}
+
+.telefon:hover {
+  color: rgb(255, 115, 0);
+  cursor: pointer;
+}
+
+.wishlist {
+  max-width: 140px;
+  color: rgb(0, 0, 0);
+}
+
+.giris {
+  color: black;
+}
+
+.yardim {
+  color: black;
+}
+
+.navbar_list_container {
+  max-width: 1400px;
+  width: 100%;
+  min-height: 72px;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 10px;
+  background: #ff416c; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #ff4b2b,
+    #ff416c
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #ff4b2b,
+    #ff416c
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  a {
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+  }
+}
+
+.new_btn {
+  max-width: 100px;
+  width: 100%;
+  min-height: 30px;
+  padding: 5px;
+  background-color: green;
+  border-radius: 6px;
+  color: white;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.fa-bars {
+  display: none;
+  font-size: 30px;
+  color: white;
+}
+
+.navbar_list {
+  max-width: 600px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.diller {
+  max-width: 200px;
+  width: 100%;
+  display: flex;
+  gap: 10px;
+
+  button {
+    max-width: 80px;
+    width: 100%;
+    min-height: 30px;
+    border-right: 1px solid blue;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .fa-bars {
+    display: flex;
+  }
+
+  .up_side_navbar {
+    display: none;
+  }
+
+  .navbar_list {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+  }
+
+  .navbar_list.active {
+    display: flex;
+  }
+}
+
+// .fa-bars.active sınıfı eklenerek görünürlüğün kontrolü
+.fa-bars.active {
+  // İstenilen stil ayarlarını ekleyin
+}
